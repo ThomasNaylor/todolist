@@ -29,7 +29,6 @@ $(document).ready(function() {
 
     // pass the selected to do text to the remove function to be removed from array
     listItem = $(this).parent().text();
-    console.log(listItem);
     removeItem(listItem);
 
     e.stopPropagation();
