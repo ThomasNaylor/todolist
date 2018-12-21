@@ -1,10 +1,11 @@
 /*
-*   QuoteGeneratorJS v1.0
+*   ToDo-List v1.0
 *   Thomas Naylor
 *
 *
 *
 */
+
 $(document).ready(function() {
   // global variables
   var listItem = '';
