@@ -1,0 +1,84 @@
+/*
+*   ToDo-List v1.0
+*   Thomas Naylor
+*
+*
+*
+*/
+
+html, body {
+  height: 100%;
+  font-size: 16px;
+  color: #FFFFFF;
+  font-family: 'Raleway', sans-serif;
+  background-image: linear-gradient(45deg, #3298db, #bdc3c7);
+}
+
+h1 { font-size: 3.0rem; }
+h2 { font-size: 2.8rem; }
+h3 { font-size: 2.4rem; }
+h4 { font-size: 2.0rem; }
+h5 { font-size: 1.8rem; }
+h6 { font-size: 1.6rem; }
+p { font-size: 1.4rem; }
+
+.container {
+  display: flex;
+}
+
+#todo {
+  height: auto;
+  width: 100%;
+  max-width: 400px;
+  min-width: 320px;
+  display: flex;
+  flex-direction: column;
+  margin: 20px auto;
+  background-color: #3498db;
+  border: 2px solid #FFFFFF;
+  background-image: linear-gradient(45deg, #3298db, #bdc3c7);
+}
+
+#todo header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #3298db;
+}
+
+#todo input[type="text"] {
+  height: 30px;
+  display: flex;
+  flex: 1;
+  padding: 10px;
+}
+
+#todo ul li {
+  height: 30px;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  text-transform: capitalize;
+}
+
+#todo ul li:nth-child(odd) {
+  background-color: rgba(255,255,255,0.2);
+}
+
+#todo ul li span {
+  width: 0;
+  text-align: center;
+  transition: 0.3s;
+  overflow: hidden;
+}
+
+#todo ul li:hover span {
+  width: 30px;
+  padding-right: 10px;
+}
+
+.complete {
+  color: gray;
+  text-decoration: line-through;
+}
