@@ -9,7 +9,7 @@
 $(document).ready(function() {
   // global variables
   var listItem = '';
-  var demoList = ['demo list','shopping', 'clean Pool', 'wash Car', 'washing'];
+  var demoList = ['shopping', 'clean Pool', 'wash Car', 'washing', 'demo list',];
 
   // add demolist array to the page
   $.each(demoList, function(i) {
